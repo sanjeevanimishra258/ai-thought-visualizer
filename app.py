@@ -18,6 +18,9 @@ if not api_key:
 
 client = genai.Client(api_key=api_key)
 MODEL_NAME = "gemini-1.5-flash"
+model = genai.GenerativeModel("gemini-1.5-flash")
+# or
+model = genai.GenerativeModel("gemini-1.5-pro")
 
 
 
