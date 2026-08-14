@@ -4,8 +4,6 @@ import time
 import streamlit as st
 import google.generativeai as genai
 
-# This pulls the key from secrets, not from code
-genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 # Page setup
