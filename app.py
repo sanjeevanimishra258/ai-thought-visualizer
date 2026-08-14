@@ -2,7 +2,8 @@ import os
 import json
 import time
 import streamlit as st
-import google.generativeai as genai
+-from google import genai
+-from google.genai import types
 
 
 # This pulls the key from secrets, not from code
